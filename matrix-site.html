@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberX Hackers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+    }
+  </style>
+</head>
+<body class="bg-black text-green-400 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="p-4 bg-gray-900 shadow flex justify-between items-center">
+    <h1 class="text-2xl font-bold">CyberX Hackers</h1>
+    <nav class="space-x-4">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">Tools</a>
+      <a href="#" class="hover:underline">Tutorials</a>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main class="flex-1 flex items-center justify-center text-center p-8">
+    <div>
+      <h2 class="text-4xl mb-4">Welcome to the Underground</h2>
+      <p class="text-lg mb-6">Explore hacking tools, tips, and tutorials. Join the cyber revolution.</p>
+      <button onclick="document.getElementById('signupModal').classList.remove('hidden')"
+              class="bg-green-600 hover:bg-green-700 text-black font-bold py-2 px-4 rounded shadow">
+        Enter the Matrix
+      </button>
+    </div>
+  </main>
+
+  <!-- Sign-Up Modal -->
+  <div id="signupModal" class="hidden fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
+    <div class="bg-gray-900 text-green-400 p-8 rounded-lg w-full max-w-md shadow-lg relative">
+      <h3 class="text-2xl mb-4 text-center font-bold">Register to Access the Matrix</h3>
+      <form class="space-y-4" onsubmit="showLinks(event)">
+        <input type="text" placeholder="Username"
+               class="w-full p-2 bg-black border border-green-400 rounded outline-none" required />
+        <input type="email" placeholder="Email"
+               class="w-full p-2 bg-black border border-green-400 rounded outline-none" required />
+        <input type="password" placeholder="Password"
+               class="w-full p-2 bg-black border border-green-400 rounded outline-none" required />
+        <button type="submit"
+                class="w-full bg-green-600 hover:bg-green-700 text-black font-bold py-2 px-4 rounded">
+          Join Now
+        </button>
+      </form>
+      <button onclick="document.getElementById('signupModal').classList.add('hidden')"
+              class="absolute top-2 right-3 text-green-400 hover:text-red-500 text-lg">&times;</button>
+    </div>
+  </div>
+
+  <!-- Secret Sections (Hidden Initially) -->
+  <div id="linkSections" class="hidden px-8 py-6 space-y-8">
+    <section>
+      <h3 class="text-2xl font-bold mb-2 text-green-300">🔗 Downloads Link</h3>
+      <ul class="list-disc list-inside space-y-2 text-green-200">
+        <li><a href="https://www.torproject.org/download/" target="_blank" class="underline hover:text-green-400">Tor Browser Download🧅</a></li>
+        <li><a href="http://pfcr7wqwtn224fdrrxpgqr53ciziojj5m3suxaupmtcdpfeijphvy2ad.onion/tor-onion-web-development-tor-server-installation-and-hosting-solutions/" target="_blank" class="underline hover:text-green-400">DARK WEB market >>> For Tor Browser🧅➡️💻➡️🌐</a></li>
+        <li><a href="https://www.expressvpn.com/vpn-download?srsltid=AfmBOorHVAF6s03KSy8zuBUJXe4983SnpSXH6PUjzkcNc2cC6mEAvLFv" target="_blank" class="underline hover:text-green-400">Best VPN for Tor Browser and others🔑🌍</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3 class="text-2xl font-bold mb-2 text-green-300">📚 Tutorials</h3>
+      <ul class="list-disc list-inside space-y-2 text-green-200">
+        <li><a href="https://digtvbg.com/files/books-for-hacking/Black%20Hat%20Python%20-%20Python%20Programming%20for%20Hackers%20and%20Pentesters%20by%20Justin%20Seitz.pdf" target="_blank" class="underline hover:text-green-400">Black Hat Python >>> Python Programming for Hackers and Pentesters by Justin Seitz📕</a></li>
+        <li><a href="https://hackershubbooks.web.app/Files/web-hacking-101.pdf" target="_blank" class="underline hover:text-green-400">Web Hacking 101 >>> How to Make Money Hacking ethically📘</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3 class="text-2xl font-bold mb-2 text-green-300">🎣 Phishing</h3>
+      <ul class="list-disc list-inside space-y-2 text-green-200">
+        <li><a href="https://github.com/htr-tech/zphisher" target="_blank" class="underline hover:text-green-400">Best Phishing >>> Link on Linux terminal🎣</a></li>
+        <li><a href="https://github.com/topics/phishing" target="_blank" class="underline hover:text-green-400">Best Phishing Links Topics📃</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center p-4 text-sm text-gray-400">
+    © 2025 CyberX Hackers | We are everywhere.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showLinks(e) {
+      e.preventDefault();
+      document.getElementById('signupModal').classList.add('hidden');
+      document.getElementById('linkSections').classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
